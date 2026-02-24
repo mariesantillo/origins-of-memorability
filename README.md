@@ -26,10 +26,7 @@ The pipeline includes:
 All the code to calculate the different features can be found in memorability/feature_computation/ with one subfolder for each feature.
 ### ResMem Memorability Model
 Memorability scores were computed using the pretrained ResMem model (https://github.com/Brain-Bridge-Lab/resmem).
-Each video was:
-- Extracted into frames (25 fps)
-- Scored frame-by-frame
-- Averaged over 15 frames to match with 0.61 TR resolution
+Each video was extracted into frames (25 fps) and scored frame-by-frame, predictions were then averaged over 15 frames to match with 0.61 TR resolution
 ### Entropy Calculation 
 Visual entropy scores were computed with VCA (https://github.com/cd-athena/VCA)) using 32x32 block sizes and scores were averaged every 15 frames. 
 ### Saliency calculation 
