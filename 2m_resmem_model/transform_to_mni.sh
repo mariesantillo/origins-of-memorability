@@ -1,0 +1,3 @@
+antsApplyTransforms   -d 3   -i /foundcog/forrestgump/foundcog-infants-2m/resmem_vca_stranet_rsm_model/second_level/results/oneSam_vca_entropy_Resmem_STRANET_rsm_VCA_Model_tfce_corrp_tstat1_thresholded.nii.gz   -r /foundcog/forrestgump/mask/MNI152_T1_2mm_brain.nii.gz   -o /foundcog/forrestgump/foundcog-infants-2m/
+resmem_vca_stranet_rsm_model/second_level/transformed_to_mni/vca_entropy.nii.gz   -t [/foundcog/forrestgump/mask/infants/mni_to_nihpd_fcgmask_2/MNI_to_NIHPD_0GenericAffine.mat,1]   -t /foundcog/forrestgump/m
+ask/infants/mni_to_nihpd_fcgmask_2/MNI_to_NIHPD_1InverseWarp.nii.gz   --interpolation NearestNeighbor
