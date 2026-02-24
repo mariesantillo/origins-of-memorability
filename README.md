@@ -24,18 +24,22 @@ The pipeline includes:
 
 ---
 
-## ResMem Memorability Model
+## Feature Computation 
 
+### ResMem Memorability Model
 Memorability scores were computed using the pretrained ResMem model (Bainbridge et al., 2022).
-
 Each video was:
 - Extracted into frames (25 fps)
 - Scored frame-by-frame
-- Averaged over 15 frames (matching TR resolution)
+- Averaged over 15 frames to match with 0.61 TR resolution
+### Entropy Calculation 
+Visual entropy scores were computed with VCA (Manon et al.) using 32x32 block sizes and scores were averaged every 15 frames. 
+### Saliency calculation 
+Saliency predictions were generated using STRA-Net. Flow net images were computed with RAFT and fed into the model. RMS of pixel wise differences were calculated and aggredgared ito 15 frame bins. 
 
 ---
 
-## 🧮 Neuroimaging Analysis
+## Neuroimaging Analysis
 
 ### First-Level Analysis
 Implemented using:
