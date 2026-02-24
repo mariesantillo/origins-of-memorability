@@ -38,4 +38,6 @@ Saliency predictions were generated using STRA-Net (https://github.com/ashleylqx
 
 For each age group and model, the code to generate the events file including the feature computations, running the glm, averaging across runs and finally conducting a group lkevel analysis (merging the data into a 4D structure and then running a permutation test) is in its specific subfolders. For infants, the results are then transformed from NIHPD to MNI space for better visualization. 
 
+Embedded within the stranet, resmem and vca models, you can also find an roi_analysis subfolder with the code to conduct the roi analsyis. The code for the creation of the ROI masks is in a seperate folder, called roi_mask.
+
 ---
