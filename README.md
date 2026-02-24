@@ -2,9 +2,7 @@
 
 This repository contains the full analysis pipeline for the manuscript:
 
-**“The Origins of Memorability in Infancy”**
-
-We investigate how computationally estimated visual memorability predicts neural responses in infants and adults during naturalistic video viewing.
+**“The Origins of Memorability in Infancy”**, investigating how memorability estimated by deep neural networks such as ResMem (Needell & Bainbridge, 2022) predict neural responses in two month old infants and adults during awake naturalistic video fMRI.
 
 ---
 
