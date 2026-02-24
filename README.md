@@ -33,9 +33,9 @@ Each video was:
 ### Entropy Calculation 
 Visual entropy scores were computed with VCA (Manon et al.) using 32x32 block sizes and scores were averaged every 15 frames. 
 ### Saliency calculation 
-Saliency predictions were generated using STRA-Net. Flow net images were computed with RAFT and fed into the model. RMS of pixel wise differences were calculated and aggredgared ito 15 frame bins. 
-
+Saliency predictions were generated using STRA-Net. Optic flow images were computed with RAFT and fed into the STRANET model. RMS of pixel wise differences were calculated and aggregated into 15 frame bins. 
 All the code to calculate the different features can be found in memorability/feature_computation/ with one subfolder for each feature.
+
 ---
 
 ## Neuroimaging Analysis
