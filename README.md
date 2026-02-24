@@ -36,22 +36,6 @@ Saliency predictions were generated using STRA-Net (https://github.com/ashleylqx
 
 ## Neuroimaging Analysis
 
-### First-Level Analysis
-Implemented using:
-
-- Nilearn
-- Nibabel
-- Custom parametric modulators
-- Motion confound regression
-
-### Second-Level Analysis
-Performed using:
-
-- FSL `randomise`
-- TFCE correction
-- One-sample permutation testing
-
-### Spatial Normalization
-Maps were transformed to MNI space using ANTs.
+For each age group and model, the code to generate the events file including the feature computations, running the glm, averaging across runs and finally conducting a group lkevel analysis (merging the data into a 4D structure and then running a permutation test) is in its specific subfolders. For infants, the results are then transformed from NIHPD to MNI space for better visualization. 
 
 ---
