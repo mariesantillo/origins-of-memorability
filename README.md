@@ -10,15 +10,14 @@ This repository contains the full analysis pipeline for the manuscript:
 
 This project tests whether frame-level memorability scores derived from the ResMem model predict brain activity during fMRI scanning.
 
-The pipeline includes:
+The pipeline includes: 
 
 1. Frame extraction from videos (.mp4)
-2. Memorability prediction using ResMem (Needell et al. 2022)
-3. Parametric modulator event-table generation
+2. Feature computations such as visual entropy, attention saliency and memorability on the video frames
+3. Generation of parametric modulation table
 4. First-level GLM analyses
-5. Second-level permutation testing (TFCE)
-6. Transformation to MNI space
-7. Cluster peak extraction
+5. Second-level permutation testing (TFCE) using fslrandomise
+6. ROI analysis
 
 ---
 
