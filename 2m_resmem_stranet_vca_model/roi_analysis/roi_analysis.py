@@ -9,11 +9,11 @@ from statsmodels.stats.multitest import multipletests
 from nibabel.processing import resample_from_to
 
 # ---------------- CONFIG ----------------
-OUT_DIR     = "/foundcog/forrestgump/foundcog-adult-2/memorability/resmem_stranet_vca_unscoredvideotest/roi_analysis/outputs/two-sided/"
-WARPED_DIR  = "/foundcog/forrestgump/foundcog-adult-2/memorability/resmem_stranet_vca_unscoredvideotest/glm/beta_maps/averaged_maps"
+OUT_DIR     = "/foundcog/forrestgump/foundcog-infants-2m/memorability/resmem_vca_stranet_rsm_model/memorability_roi_analysis/outputs/two-sided/"
+WARPED_DIR  = "/foundcog/forrestgump/foundcog-infants-2m/memorability/resmem_vca_stranet_rsm_model/memorability_roi_analysis/warped_beta_maps_mni2mm"
 MASK_DIR    = "/foundcog/forrestgump/mask/memorability/test/masks/"
 
-WARPED_GLOB = os.path.join(WARPED_DIR, "*_resmem_averaged_beta_map.nii*")    # beta maps
+WARPED_GLOB = os.path.join(WARPED_DIR, "*resmem-prediction_averaged_beta_map_MNI2mm.nii.gz_MNI2mm.nii.gz*")     # beta maps
 MASK_GLOB   = os.path.join(MASK_DIR,   "*.nii*")    
 
 ALT         = "two-sided"  
